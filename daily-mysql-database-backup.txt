@@ -1,0 +1,12 @@
+Open terminal in Ubuntu
+
+Enter below command
+
+> crontab -e
+
+past below code
+
+
+* * * * * mysqldump -u root -p'' test | gzip > /var/www/backup/database_`date '+%m-%d-%Y'`.sql.gz
+
+Save it.
